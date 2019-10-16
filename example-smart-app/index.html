@@ -108,7 +108,10 @@
 		return (isNaN(this.getTime()))?"Invalid Date":retVal;
 	};
 	function ready(smart) {
+		
 		if (typeof smart.patient === "object") {
+			console.log(smart);
+			var patientApi = smart.patient.api;
 		patientApi.fetchAll({
                   type: 'Observation',
                   query: {
@@ -126,8 +129,7 @@
                console.log(response)
 });
 
-			console.log(smart);
-			var patientApi = smart.patient.api;
+
 			
 			
 		}
