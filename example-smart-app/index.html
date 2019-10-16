@@ -129,7 +129,8 @@
                                                    var responseLength = response.length;
                                                    var obvText = "<table>";
                                                    for (var i=0;i<responseLength;i++) {
-                                                                                obvText += "<tr><td>"+response[i].code.text+"</td></tr>";
+                                                         obvText += "<tr><td>"+response[i].code.text+"</td>";
+                                                         obvText += "<td>"+response[i].valueQuantity.value+"</td></tr>";
                                                    }
                                                    obvText = obvText+"</table>"
                                                    document.getElementById("obvDiv").innerHTML = obvText;
