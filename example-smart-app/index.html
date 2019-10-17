@@ -150,14 +150,15 @@
 }).then(function(response) { 
                console.log(response)
                var responseIdentLength = response[0].identifier.length
-               var mrnText
+               var mrnText = " "
                for (var i=0;i<responseIdentLength;i++) {
                	 if (response[0].identifier[i].type.text = "MRN") {
-               	   document.getElementById("demo-mrn").innerHTML = response[0].identifier[i].value;
-               	   
+               	 	 mrnText = response[0].identifier[i].value
+               	                	   
                	 } 
                	 	 
                	 }
+               document.getElementById("demo-mrn").innerHTML = mrnText;
            })
                /*
                var responseLength = response.length;
