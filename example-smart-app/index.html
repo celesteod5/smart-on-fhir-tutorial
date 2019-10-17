@@ -142,8 +142,9 @@
                  }
                  obvText = obvText+"</table>"
                  document.getElementById("obvDiv").innerHTML = obvText;
-                 
-               patientApi.fetchAll({
+})                 
+               
+             patientApi.fetchAll({
              type: 'Patient'}
                
 }).then(function(response) { 
