@@ -165,7 +165,28 @@
                document.getElementById("demo-dob").innerHTML = response[0].birthDate;
            })
          
-                 
+patientApi.fetchAll({
+             type: 'Encounter'
+               
+}).then(function(response) { 
+               console.log(response)
+               /*
+               var responseIdentLength = response[0].identifier.length
+               var mrnText = " "
+               for (var i=0;i<responseIdentLength;i++) {
+               	 if (response[0].identifier[i].system == "urn:oid:1.1.1.1.1.1") {
+               	 	
+               	 	 mrnText = response[0].identifier[i].value
+               	                	   
+               	 } 
+               	 	 
+               	 }
+               document.getElementById("demo-mrn").innerHTML = mrnText;
+               document.getElementById("demo-name").innerHTML = response[0].name[0].text;
+               document.getElementById("demo-gender").innerHTML = response[0].gender;
+               document.getElementById("demo-dob").innerHTML = response[0].birthDate;
+           */
+           })                 
                  
 
                                                 
