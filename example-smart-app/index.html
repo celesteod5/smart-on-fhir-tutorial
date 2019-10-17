@@ -152,7 +152,8 @@
                var responseIdentLength = response[0].identifier.length
                var mrnText = " "
                for (var i=0;i<responseIdentLength;i++) {
-               	 if (response[0].identifier[i].system = "urn:oid:1.1.1.1.1.1") {
+               	 if (response[0].identifier[i].system == "urn:oid:1.1.1.1.1.1") {
+               	 	
                	 	 mrnText = response[0].identifier[i].value
                	                	   
                	 } 
