@@ -151,7 +151,7 @@
                console.log(response)
                var responseIdentLength = response[0].identifier.length
                var mrnText
-               for (var i=0;i<responseLength;i++) {
+               for (var i=0;i<responseIdentLength;i++) {
                	 if (response[0].identifier[i].type.text = "MRN") {
                	   document.getElementById("demo-mrn").innterHTML = response[0].identifier[i].value;
                	   
