@@ -149,6 +149,16 @@
                
 }).then(function(response) { 
                console.log(response)
+               var responseIdentLength = response[0].identifier.length
+               var mrnText
+               for (var i=0;i<responseLength;i++) {
+               	 if (response[0].identifier[i].type.text = "MRN") {
+               	   document.getElementById("demo-mrn").innterHTML = response[0].identifier[i].value
+               	   
+               	 } 
+               	 	 
+               	 }
+           })
                /*
                var responseLength = response.length;
                var obvText = "<table>";
